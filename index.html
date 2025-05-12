@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vida Equilibrada</title>
+  <meta name="description" content="Artigos, receitas e dicas de saúde física e mental para uma vida equilibrada.">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+  <header>
+    <div class="header-title">
+      <h1>Nutrição com Próposito</h1>
+      <p>Guia de alimentação saudável para uma vida melhor</p>
+    </div>
+    <div class="divider"></div>
+    <nav>
+      <div class="menu-toggle" onclick="toggleMenu(this)">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul id="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="doenças.html">Doenças</a></li>
+        <li><a href="#exercicios">Exercícios</a></li>
+        <li><a href="#beleza">Saúde</a></li>
+        <li><a href="#mental">Saúde Mental</a></li>        
+        <li><a href="#beleza">Beleza</a></li>
+        <li><a href="#beleza">Bem Estar</a></li>
+        <li class="ico-familia"><a href="#beleza">Família</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Cuide do corpo e da mente</h2>
+    <p>Artigos, dicas e receitas para uma vida saudável e equilibrada.</p>
+  </section>
+
+  <section class="section">
+    <h3>Destaques</h3> 
+    <div class="articles">
+      <div class="card">
+        <img src="imagens/alimentação saudável.jpg" alt="Alimentação Saudável">
+        <div class="card-content">
+          <h4>Alimentos que fortalecem o sistema imunológico</h4>
+          <p>Descubra quais alimentos ajudam a manter seu corpo protegido naturalmente.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="imagens/unhas saudáveis.jpg" alt="Unhas Saudáveis">
+        <div class="card-content">
+          <h4>Unhas quebradiças</h4>
+          <p>Saiba como deixar suas unhas mais fortes com passos simples.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="imagens/queimaçao.jpg" alt="Refluxo Gastroesofágico">
+        <div class="card-content">
+          <h4>Refluxo Gastroesofágico</h4>
+          <p>Azia, refluxo e dor toráxica, como se livrar disso?</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="imagens/frutas que ajudam na digestão.jpg" alt="Frutas e saúde">
+        <div class="card-content">
+          <h4>Frutas que ajudam na digestão</h4>
+          <p>Veja quais frutas são indicadas para melhorar seu sistema digestivo.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="imagens/depressão.jpg" alt="Depressão">
+        <div class="card-content">
+          <h4>Coloque um fim na Depressão</h4>
+          <p>Aprenda a combater este mal que aterroriza tantas famílias, a Depressão não é frescura!</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="imagens/vitaminas essenciais.jpg" alt="Vitaminas essenciais">
+        <div class="card-content">
+          <h4>Vitaminas essenciais para o corpo</h4>
+          <p>Entenda a importância das vitaminas e onde encontrá-las na alimentação.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Vida Equilibrada. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    function toggleMenu(toggle) {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('active');
+      toggle.classList.toggle('open');
+    }
+  </script>
+</body>
+
+</html>
