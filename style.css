@@ -4,7 +4,7 @@
 
     :root {
       --cor-primaria: #4caf4f;
-      --cor-secundaria: #dae9c9;
+      --cor-secundaria: #f9fbe7;
       --cor-fundo: #fff;
       --cor-texto: #333;
       --cor-hover: #66BB6A;
@@ -66,7 +66,7 @@
       margin: 8px 0 4px;
     }
 
-    nav {
+    nav > a {
       position: relative;
       width: 100%;
       max-width: 1200px;            
@@ -74,7 +74,9 @@
       right: auto; 
       position: relative;
       padding-bottom: 3px;
-    }
+      margin: auto;
+      transition-duration: 3ms;
+    }    
 
     .menu-toggle {
       display: none;
@@ -94,28 +96,47 @@
     }
 
     nav ul {
+      position: relative;
       list-style: none;
       display: flex;
-      gap: 0.5rem;
+      gap: 0.5rem;      
       margin: auto;
+      text-align: center;
     }
 
     nav ul li a {
       color: #fff;
-      text-decoration: none;
-      padding: 0px 8px 0px 8px;
+      text-decoration: none;      
       font-weight: 500;
-      transition: background 0.3s;
+      transition: 0.3s;
       text-align: center;
-      display: block;
+      display:  inline-block;
       
     }
 
     nav ul li a:hover {
       background: var(--cor-hover);
       border-radius: 5px;
-      display: block;            
+      padding: 0px 5px;
+      display: block;                
+    }  
+   
+    .dropdown-menu {
+      background-color: var(--cor-primaria);
+      position: absolute;
+      display: none;
+      text-align: center;
+      padding: 10px;
     }
+
+    .dropdown:hover .dropdown-menu{
+      display: block;
+      border: 10px;
+      
+      
+
+    }
+    
 
     main {
       min-width: 280px;
